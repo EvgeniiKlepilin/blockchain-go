@@ -50,7 +50,7 @@ func main() {
 }
 
 func calculateHash(block Block) string {
-	record := string(block.Index) + block.Timestamp + block.Source + block.Destination + strconv.FormatFloat(block.Amount, 'f', -1, 64) + block.PrevHash
+	record := strconv.Itoa(block.Index) + block.Timestamp + block.Source + block.Destination + strconv.FormatFloat(block.Amount, 'f', -1, 64) + block.PrevHash
 	h := sha256.New()
 	h.Write([]byte(record))
 	hashed := h.Sum(nil)
@@ -90,7 +90,7 @@ func replaceChain(newBlocks []Block) {
 	}
 }
 
-func respondWithJSON(w http.ResponseWriter, r *http.Request, code int, payload interface{}) {
+func respondWithJSON(w http.ResponseWriter, _ *http.Request, code int, payload any) {
 	response, err := json.MarshalIndent(payload, "", "  ")
 	if err != nil {
 		w.WriteHeader(http.StatusInternalServerError)
