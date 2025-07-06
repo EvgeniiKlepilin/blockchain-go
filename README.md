@@ -3,9 +3,8 @@
 [![Go Version](https://img.shields.io/badge/Go-1.24.2-blue.svg)](https://golang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Go Report Card](https://goreportcard.com/badge/github.com/EvgeniiKlepilin/blockchain-go)](https://goreportcard.com/report/github.com/EvgeniiKlepilin/blockchain-go)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/EvgeniiKlepilin/blockchain-go)
-[![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)](https://github.com/EvgeniiKlepilin/blockchain-go)
-[![GoDoc](https://godoc.org/github.com/EvgeniiKlepilin/blockchain-go?status.svg)](https://godoc.org/github.com/EvgeniiKlepilin/blockchain-go)
+<!-- [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/EvgeniiKlepilin/blockchain-go) -->
+[![Coverage](https://img.shields.io/badge/coverage-61%25-brightgreen.svg)](https://github.com/EvgeniiKlepilin/blockchain-go)
 
 A simple blockchain implementation in Go that demonstrates the core concepts of blockchain technology. This project showcases a basic ledger system with transaction handling, block validation, and a REST API for blockchain operations.
 
